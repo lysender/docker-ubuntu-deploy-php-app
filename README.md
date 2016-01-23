@@ -6,11 +6,11 @@ Deployment is triggered via cron or any scheduler tool from your host or cloud i
 
 For first run, it clones the repo.
 
-For succeding runs, it pulls from the master branch at certain interval.
+For succeding runs, it pulls from the configured deploy branch.
 
 ## Overview
 
-The purpoe of this container is to automate your php app's deployment via GIT. This assumes that you already have dockerized PHP app and perhaps the source code is just mounted from the host machine (which I did before).
+The purpose of this container is to automate your php app's deployment via GIT. This assumes that you already have dockerized PHP app and perhaps the source code is just mounted from the host machine (which I did before).
 
 In order to partially or fully automate the process, we put the PHP app's source code inside a volumne container and perform the GIT operation via a deploy container. Therefore, we need the following:
 
