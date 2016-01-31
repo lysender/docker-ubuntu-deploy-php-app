@@ -1,7 +1,7 @@
 FROM lysender/ubuntu-php
 MAINTAINER Leonel Baer <leonel@lysender.com>
 
-RUN apt-get -y install pwgen && apt-get clean
+RUN apt-get -y install git pwgen && apt-get clean
 
 # Configure servicies
 ADD ./deploy.sh /deploy.sh
